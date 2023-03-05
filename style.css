@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body{background-color:antiquewhite}
+nav ul {display: flex;align-items: center;padding: 0 15px;
+    height: 50px;list-style-type: none;background-color: rgb(67, 10, 67);color: white;font-size: 25px;font-weight: bolder;
+}
+
+.container{display: flex;justify-content: center;margin-top: 50px;}
+
+.grid{display: grid;grid-template-columns: repeat(3,15vh);grid-template-rows:  repeat(3,15vh);}
+
+.gridItems{border: 2px solid black;display: flex;justify-content: center;align-items: center;font-size: 85px;font-family: Arial, Helvetica;cursor: pointer;}
+
+.gridItems:hover{background-color: rgba(255, 208, 255, 0.811);}
+
+.bl-0{border-left: 0;}
+.br-0{border-right: 0;}
+.bt-0{border-top: 0;}
+.bb-0{border-bottom: 0;}
+
+.gameInfo{margin:0 15px;display: flex;flex-direction: column;}
+#info{margin-top:8px;margin-bottom:8px;font-size: 20px;}
+#reset{padding:3px 18px;background-color: rgb(241, 194, 236);cursor: pointer;margin-top: 10px; font-weight: bold;width: 100px;}
+#reset:hover{background-color:rgb(225, 164, 219)}
+#winImage{margin: 10px 0;transition: width 1s ;width: 0;}
+#line{width: 0;transition: width 1s ease-in-out;height: 3px;background-color: black;position: absolute;}
+
+@media screen and (max-width:750px) {.container{flex-wrap:wrap}
+.gameInfo{margin-top: 10px;} h2{font-size: 25px;} #reset{padding: 5px 30px;}
+}
