@@ -23,8 +23,11 @@ nav ul {display: flex;align-items: center;padding: 0 15px;
 #reset{padding:3px 18px;background-color: rgb(241, 194, 236);cursor: pointer;margin-top: 10px; font-weight: bold;width: 100px;}
 #reset:hover{background-color:rgb(225, 164, 219)}
 #winImage{margin: 10px 0;transition: width 1s ;width: 0;}
-#line{width: 0;transition: width 1s ease-in-out;height: 3px;background-color: black;position: absolute;}
+#line{display:none;}
 
 @media screen and (max-width:750px) {.container{flex-wrap:wrap}
 .gameInfo{margin-top: 10px;} h2{font-size: 25px;} #reset{padding: 5px 30px;}
+}
+@media screen and (min-width: 1280px){
+    #line{width: 0;transition: width 1s ease-in-out;height: 3px;background-color: black;position: absolute;display: block;}
 }
